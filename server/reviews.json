@@ -1,0 +1,16 @@
+{
+    "reviews": [
+        {
+            "id": 0,
+            "author": "Random author name",
+            "rating": "9/10",
+            "text": "Great random product."
+        },
+        {
+            "id": 1,
+            "author": "Even more random author name",
+            "rating": "5/10",
+            "text": "Even greater random product."
+        }
+    ]
+}

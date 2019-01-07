@@ -1,0 +1,20 @@
+@import "./mixins/fonts";
+@import "./mixins/colors";
+@import "./mixins/breakpoints";
+@import "./mixins/border";
+@import "./mixins/shadow";
+
+@import "./Header/header";
+@import "./PageContent/page-content";
+@import "./Products/products";
+@import "./Buttons/buttons";
+@import "./Cart/cart";
+@import "./Checkout/checkout";
+@import "./Summary/summary";
+
+@import "./Common/common";
+
+a {
+    color: inherit;
+    text-decoration: none;
+} 

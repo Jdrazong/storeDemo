@@ -1,0 +1,12 @@
+{
+    "paymentOptions": [
+        {
+            "id": 0,
+            "name": "Cash on delivery"
+        },
+        {
+            "id": 1,
+            "name": "Bank transfer"
+        }
+    ]
+}

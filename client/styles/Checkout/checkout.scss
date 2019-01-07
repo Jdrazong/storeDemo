@@ -1,0 +1,87 @@
+.checkout-payment-option {
+    margin-top: 10px;
+    width: 40%;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.checkout-shipping-option {
+    margin: 10px 20px 0 0;
+    width: 40%;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.checkout-payment-option-label,
+.checkout-shipping-option-label,
+.checkout-name-label,
+.checkout-address-label {
+    @include font-oswald(16px, $color-black, 400);
+    height: 35px;
+}
+
+.checkout-address-label {
+    margin-left: 10px;
+
+    @media screen and (max-width: $mobile) {
+        margin-left: 0;
+    }
+}
+
+.checkout-name-input-container,
+.checkout-address-input-container {
+    width: 40%;
+    margin-top: 10px;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.checkout-address-input-container {
+    margin-left: 10px;
+
+    @media screen and (max-width: $mobile) {
+        margin-left: 0;
+    }
+}
+
+.checkout-name-input,
+.checkout-address-input {
+    @include font-oswald(16px, $color-black, 400);
+    @include border-mixin;
+    @include shadow-mixin;
+    width: 100%;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.checkout-address-input {
+    margin-left: 10px;
+
+    @media screen and (max-width: $mobile) {
+        margin-left: 0;
+    }
+}
+
+.checkout-name-and-address-container,
+.checkout-shipping-and-payment-container {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+    }
+}
+
+.checkout-submit-button {
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+}

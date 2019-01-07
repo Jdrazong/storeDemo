@@ -1,0 +1,180 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Universal frying pan",
+            "category": "FRYING_PANS",
+            "price": 20.50,
+            "currency": "EUR",
+            "img": "fp1.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Rocket powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20.24,
+            "currency": "EUR",
+            "img": "fp2.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Creepy frying pan",
+            "category": "FRYING_PANS",
+            "price": 31.20,
+            "currency": "EUR",
+            "img": "fp3.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Tea powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp4.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Universal frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Rocket powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp2.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Creepy frying pan",
+            "category": "FRYING_PANS",
+            "price": 32,
+            "currency": "EUR",
+            "img": "fp3.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Tea powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp4.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Universal frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp1.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Rocket powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp2.jpg"
+        },
+        {
+            "id": 41,
+            "name": "Creepy frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp3.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Tea powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp4.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Universal frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp1.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Rocket powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp2.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Creepy frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp3.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Tea powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 25,
+            "currency": "EUR",
+            "img": "fp4.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Universal frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp1.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Rocket powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp2.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Creepy frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp3.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Tea powered frying pan",
+            "category": "FRYING_PANS",
+            "price": 20,
+            "currency": "EUR",
+            "img": "fp4.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Toaster",
+            "category": "TOASTERS",
+            "price": 45,
+            "currency": "EUR",
+            "img": "t1.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Another toaster",
+            "category": "TOASTERS",
+            "price": 35,
+            "currency": "EUR",
+            "img": "t1.jpg"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "shippingOptions": [
+        {
+            "id": 0,
+            "name": "Standard shipping",
+            "price": 5,
+            "currency": "EUR",
+            "estimatedDelivery": "2-5 Days"
+        },
+        {
+            "id": 1,
+            "name": "Premium shipping",
+            "price": 10,
+            "currency": "EUR",
+            "estimatedDelivery": "1-3 Days"
+        }
+    ]
+}

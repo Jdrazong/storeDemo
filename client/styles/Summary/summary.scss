@@ -1,0 +1,8 @@
+.summary-header,
+.summary-total-price,
+.summary-ordered-items-header,
+.ordered-item {
+    @include font-oswald(24px, $color-black, 400);
+    margin: 5px;
+    text-align: center;
+}
