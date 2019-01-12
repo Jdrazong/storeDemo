@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 import { products } from './products.json';
 import { shippingOptions } from './shippingOptions.json';
 import { paymentOptions } from './paymentOptions.json';
@@ -8,10 +9,6 @@ import { reviews } from './reviews.json';
 const app = express();
 
 app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendfile(`${__dirname}/public/index.html`);
-});
 
 app.get('/products', (req, res) => {
     // comment res.json and uncomment setTimeout to test loader on fetching products
@@ -58,6 +55,10 @@ app.post('/submitOrder', (req, res) => {
             orderedItems
         });
     });
+});
+
+app.get('/*', (req, res) => {
+    res.sendFile('public/index.html', { root: path.dirname(__dirname) });
 });
 
 app.listen(3000, () => {

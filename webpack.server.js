@@ -7,6 +7,9 @@ const config = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build')
     },
+    node: {
+        __dirname: false
+    },
     module: {
         rules: [
             {
