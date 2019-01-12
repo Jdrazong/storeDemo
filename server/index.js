@@ -48,7 +48,6 @@ app.post('/submitOrder', (req, res) => {
     });
 
     req.on('end', () => {
-        console.log(body);
         const parsedBody = JSON.parse(body);
         const totalPrice = parsedBody.cart.reduce((prevValue, nextValue) => prevValue + nextValue.quantity * nextValue.product.price, 0);
         const currency = parsedBody.cart.length && parsedBody.cart[0].product.currency;

@@ -18,7 +18,8 @@ const mapStateToProps = state => ({
     address: state.checkout.address,
     selectedShippingOption: getSelectedShippingOption(state),
     selectedPaymentOption: getSelectedPaymentOption(state),
-    cart: getItemsWithQuantities(state)
+    cart: getItemsWithQuantities(state),
+    shouldRender: true
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -40,7 +41,8 @@ const mergeProps = (stateProps, dispatchProps) => ({
             shippingOption: stateProps.selectedShippingOption,
             paymentOption: stateProps.selectedPaymentOption
         }
-    })
+    }),
+    shouldRender: stateProps.shouldRender
 });
 
 export default connect(

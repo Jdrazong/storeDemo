@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
     value: state.checkout.selectedShippingOption,
     options: getSelectShippingOptions(state),
     labelClassName: 'checkout-shipping-option-label',
-    shouldRender: getSelectShippingOptions(state).length
+    shouldRender: Boolean(getSelectShippingOptions(state).length)
 });
 
 const mapDispatchToProps = dispatch => ({

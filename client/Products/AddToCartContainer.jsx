@@ -12,7 +12,8 @@ const mapStateToProps = (state, ownProps) => ({
     product: ownProps.product,
     imageSource: shoppingCartImage,
     text: messages.buttons.cartButtons.addToCart,
-    isPrimary: true
+    isPrimary: true,
+    shouldRender: true
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -27,7 +28,8 @@ const mergeProps = (stateProps, dispatchProps) => ({
     text: stateProps.text,
     isPrimary: stateProps.isPrimary,
     imageSource: stateProps.imageSource,
-    clickHandler: () => dispatchProps.addCartItem({ item: stateProps.product })
+    clickHandler: () => dispatchProps.addCartItem({ item: stateProps.product }),
+    shouldRender: stateProps.shouldRender
 });
 
 export default connect(

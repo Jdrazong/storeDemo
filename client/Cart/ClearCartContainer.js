@@ -6,10 +6,11 @@ import actions from './actions';
 const { Button } = components;
 const { clearCart } = actions;
 
-const mapStateToProps = () => ({
+const mapStateToProps = state => ({
     className: 'cart-clear-cart-button',
     text: messages.buttons.cartButtons.clearCart,
-    isPrimary: false
+    isPrimary: false,
+    shouldRender: Boolean(state.cart.cart.length)
 });
 
 const mapDispatchToProps = dispatch => ({

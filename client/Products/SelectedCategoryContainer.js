@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
     value: state.products.categoriesFilter,
     options: getSelectCategories(state),
     labelClassName: 'products-categories-option-label',
-    shouldRender: getSelectCategories(state).length
+    shouldRender: Boolean(getSelectCategories(state).length)
 });
 
 const mapDispatchToProps = dispatch => ({

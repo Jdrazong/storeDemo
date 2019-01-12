@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
     value: state.checkout.selectedPaymentOption,
     options: getSelectPaymentOptions(state),
     labelClassName: 'checkout-payment-option-label',
-    shouldRender: getSelectPaymentOptions(state).length
+    shouldRender: Boolean(getSelectPaymentOptions(state).length)
 });
 
 const mapDispatchToProps = dispatch => ({

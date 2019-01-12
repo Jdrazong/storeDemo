@@ -7,7 +7,8 @@ const Input = ({
     className,
     type,
     min,
-    id
+    id,
+    blurHandler
 }) => (
     <input
         id={id}
@@ -15,13 +16,15 @@ const Input = ({
         value={value}
         onChange={changeHandler}
         type={type}
+        onBlur={blurHandler}
         {...(min && { min })}
     />
 );
 
 Input.defaultProps = {
     type: 'text',
-    min: null
+    min: null,
+    blurHandler: () => {}
 };
 
 Input.propTypes = {
@@ -29,7 +32,8 @@ Input.propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     className: PropTypes.string.isRequired,
     type: PropTypes.string,
-    min: PropTypes.number
+    min: PropTypes.number,
+    blurHandler: PropTypes.func
 };
 
 export default Input;

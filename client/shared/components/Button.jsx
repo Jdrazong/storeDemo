@@ -7,8 +7,8 @@ const onClick = (event, clickHandler) => {
 };
 
 const Button = ({
-    clickHandler, isPrimary, text, imageSource, className
-}) => (
+    clickHandler, isPrimary, text, imageSource, className, shouldRender
+}) => shouldRender && (
     <button
         onClick={event => onClick(event, clickHandler)}
         className={isPrimary ? `${className} button-primary` : `${className} button-secondary`}
@@ -29,7 +29,8 @@ Button.propTypes = {
     clickHandler: PropTypes.func.isRequired,
     isPrimary: PropTypes.bool,
     text: PropTypes.string.isRequired,
-    imageSource: PropTypes.string
+    imageSource: PropTypes.string,
+    shouldRender: PropTypes.bool.isRequired
 };
 
 export default Button;
