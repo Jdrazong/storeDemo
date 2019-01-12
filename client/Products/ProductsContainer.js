@@ -6,12 +6,11 @@ import Products from './Products';
 import selectors from './selectors';
 
 const { getFilteredProducts } = selectors;
-const { withConditionalRender, withLoader } = hocs;
+const { withLoader } = hocs;
 
 const mapStateToProps = state => ({
     products: getFilteredProducts(state),
     nameFilter: state.products.nameFilter,
-    shouldRender: getFilteredProducts(state),
     isLoading: state.products.isFetchingProducts
 });
 
@@ -20,6 +19,5 @@ export default compose(
     connect(
         mapStateToProps
     ),
-    withConditionalRender,
     withLoader
 )(Products);

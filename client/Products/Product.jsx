@@ -4,7 +4,7 @@ import { productShape, reviewShape } from './shapes';
 import Review from './Review';
 import AddToCartContainer from './AddToCartContainer';
 
-const Product = ({ productDetails }) => (
+const Product = ({ productDetails }) => Boolean(productDetails.productDescription) && (
     <div className="product-details-container">
         <div className="product-details-title">{productDetails.product.name}</div>
         <img

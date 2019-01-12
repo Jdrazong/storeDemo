@@ -27,10 +27,16 @@ class Select extends Component {
 
     render() {
         const {
-            selectLabelId, className, labelValue, value, options, labelClassName
+            selectLabelId,
+            className,
+            labelValue,
+            value,
+            options,
+            labelClassName,
+            shouldRender
         } = this.props;
 
-        return (
+        return shouldRender && (
             <div className={`select-container ${className}`}>
                 <label
                     className={labelClassName}
@@ -66,7 +72,8 @@ Select.propTypes = {
     value: PropTypes.string.isRequired,
     handleChange: PropTypes.func.isRequired,
     labelClassName: PropTypes.string.isRequired,
-    options: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string, text: PropTypes.string })).isRequired
+    options: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string, text: PropTypes.string })).isRequired,
+    shouldRender: PropTypes.bool.isRequired
 };
 
 export default Select;

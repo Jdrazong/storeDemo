@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import QuantityBoxContainer from './QuantityBoxContainer';
 
 const CartItems = ({ cartItems }) => (
-    cartItems.map(item => (
+    cartItems.length && cartItems.map(item => (
         <div className="cart-items-container" key={item.product.id}>
             <CartItem cartItem={item} />
             <QuantityBoxContainer itemId={item.product.id} />
