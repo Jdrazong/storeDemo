@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import selectors from './selectors';
+import selectors from '../selectors';
 
 describe('Cart: selectors', () => {
     const { getItemsWithQuantities, getFirstItemCurrency, getTotalCartPrice } = selectors;

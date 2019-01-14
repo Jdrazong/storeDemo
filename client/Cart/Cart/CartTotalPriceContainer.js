@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { components, messages } from 'shared';
-import selectors from './selectors';
+import selectors from '../selectors';
 
 const { AmountWithCurrency } = components;
 const {

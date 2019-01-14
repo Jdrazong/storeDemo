@@ -2,10 +2,10 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { Link } from 'react-router-dom';
-import Cart from './Cart';
-import CartItemsContainer from './CartItemsContainer';
-import CartTotalPriceContainer from './CartTotalPriceContainer';
-import ClearCartContainer from './ClearCartContainer';
+import Cart from '../Cart';
+import CartItemsContainer from '../../CartItems/CartItemsContainer';
+import CartTotalPriceContainer from '../CartTotalPriceContainer';
+import ClearCartContainer from '../ClearCartContainer';
 
 describe('Cart: Cart', () => {
     it('should render with basic components', () => {

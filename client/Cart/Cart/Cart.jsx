@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { components, messages } from 'shared';
-import CartItemsContainer from './CartItemsContainer';
+import CartItemsContainer from '../CartItems/CartItemsContainer';
+import { CHECKOUT_LINK } from '../constants';
 import CartTotalPriceContainer from './CartTotalPriceContainer';
 import ClearCartContainer from './ClearCartContainer';
-import { CHECKOUT_LINK } from './constants';
 
 const { Content } = components;
 

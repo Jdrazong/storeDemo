@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import CartItem from './CartItem';
+import CartItem from '../CartItem';
 
 describe('Cart: CartItem', () => {
     const baseProps = {

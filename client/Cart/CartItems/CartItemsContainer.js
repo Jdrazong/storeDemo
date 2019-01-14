@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import actions from './actions';
-import selectors from './selectors';
+import actions from '../actions';
+import selectors from '../selectors';
 import CartItems from './CartItems';
 
 const { addCartItem } = actions;

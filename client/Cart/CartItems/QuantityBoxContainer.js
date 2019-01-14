@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { components } from 'shared';
-import actions from './actions';
+import actions from '../actions';
 
 const { setCartItemQuantity, setQuantityWithoutRemoval } = actions;
 const { Input } = components;
