@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
-import CartTotalPrice from './CartTotalPrice';
+import { components, messages } from 'shared';
 import selectors from './selectors';
 
+const { AmountWithCurrency } = components;
 const {
     getTotalCartPrice,
     getFirstItemCurrency
@@ -9,9 +10,11 @@ const {
 
 const mapStateToProps = state => ({
     currency: getFirstItemCurrency(state),
-    totalPrice: getTotalCartPrice(state)
+    amount: getTotalCartPrice(state),
+    label: messages.cart.labels.totalPrice,
+    className: 'cart-total-price'
 });
 
 export default connect(
     mapStateToProps
-)(CartTotalPrice);
+)(AmountWithCurrency);

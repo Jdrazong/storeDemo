@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { utils, containers } from 'shared';
+import { containers, components } from 'shared';
 import { productShape } from '../shapes';
 import HighlightedFilterText from '../Filters/HighlightedFilterText';
 
 const { AddToCartContainer } = containers;
+const { AmountWithCurrency } = components;
 
 const ProductTile = ({ product, nameFilter, goToProductDetails }) => (
     <div
@@ -22,7 +23,11 @@ const ProductTile = ({ product, nameFilter, goToProductDetails }) => (
             name={product.name}
             nameFilter={nameFilter}
         />
-        <div className="product-tile-price">{utils.formatAmountWithCurrency(product.price, product.currency)}</div>
+        <AmountWithCurrency
+            className="product-tile-price"
+            currency={product.currency}
+            amount={product.price}
+        />
         <div className="product-tile-buttons-container">
             <AddToCartContainer product={product} />
         </div>

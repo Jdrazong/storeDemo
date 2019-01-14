@@ -5,6 +5,7 @@ import checkout from './checkout';
 import product from './product';
 import cart from './cart';
 import summary from './summary';
+import currencies from './currencies';
 
 export default {
     filters,
@@ -13,5 +14,6 @@ export default {
     checkout,
     product,
     cart,
-    summary
+    summary,
+    currencies
 };

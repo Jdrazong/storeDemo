@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { components, messages, utils } from 'shared';
+import { components, messages } from 'shared';
 
-const { Content } = components;
+const { Content, AmountWithCurrency } = components;
 
 class Summary extends Component {
     componentDidMount() {
@@ -15,9 +15,12 @@ class Summary extends Component {
         return (
             <Content>
                 <div className="summary-header">{messages.summary.text.confirmation}</div>
-                <div className="summary-total-price">
-                    {`${messages.cart.labels.totalPrice}: ${utils.formatAmountWithCurrency(orderSummary.totalPrice, orderSummary.currency)}`}
-                </div>
+                <AmountWithCurrency
+                    className="summary-total-price"
+                    label={messages.cart.labels.totalPrice}
+                    amount={orderSummary.totalPrice}
+                    currency={orderSummary.currency}
+                />
                 <div className="summary-ordered-items-header">{messages.summary.text.orderedItems}</div>
                 <div className="summary-ordered-items-container">
                     {orderSummary.orderedItems.map(item => (
