@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { productShape, reviewShape } from './shapes';
+import { containers } from 'shared';
+import { productShape, reviewShape } from '../shapes';
 import Review from './Review';
-import AddToCartContainer from './AddToCartContainer';
+
+const { AddToCartContainer } = containers;
 
 const Product = ({ productDetails }) => Boolean(productDetails.productDescription) && (
     <div className="product-details-container">

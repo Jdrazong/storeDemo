@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import actions from './actions';
+import actions from '../actions';
+import selectors from '../selectors';
 import Filters from './Filters';
-import selectors from './selectors';
 
 const { getProductsCategories } = selectors;
 

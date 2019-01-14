@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import { messages, components } from 'shared';
-import actions from './actions';
-import { PAYMENT_OPTION_LABEL_ID } from './constants';
-import selectors from './selectors';
+import actions from '../actions';
+import { PAYMENT_OPTION_LABEL_ID } from '../constants';
+import selectors from '../selectors';
 
 const { Select } = components;
 const { setSelectedCategory } = actions;

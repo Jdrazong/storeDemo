@@ -1,10 +1,10 @@
 import actions from './actions';
 import products from './reducers';
-import Products from './Products';
-import ProductsContainer from './ProductsContainer';
-import Filters from './Filters';
-import FiltersContainer from './FiltersContainer';
-import ProductDetailsContainer from './ProductDetailsContainer';
+import Products from './Products/Products';
+import ProductsContainer from './Products/ProductsContainer';
+import Filters from './Filters/Filters';
+import FiltersContainer from './Filters/FiltersContainer';
+import ProductDetailsContainer from './ProductDetails/ProductDetailsContainer';
 import { productShape } from './shapes';
 
 export {

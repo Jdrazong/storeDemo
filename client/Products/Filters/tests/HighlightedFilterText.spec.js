@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import HighlightedFilterText from './HighlightedFilterText';
+import HighlightedFilterText from '../HighlightedFilterText';
 
 describe('Products: HighlightedFilterText', () => {
     const baseProps = {

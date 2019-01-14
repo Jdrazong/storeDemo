@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { utils } from 'shared';
-import { productShape } from './shapes';
-import HighlightedFilterText from './HighlightedFilterText';
-import AddToCartContainer from './AddToCartContainer';
+import { utils, containers } from 'shared';
+import { productShape } from '../shapes';
+import HighlightedFilterText from '../Filters/HighlightedFilterText';
+
+const { AddToCartContainer } = containers;
 
 const ProductTile = ({ product, nameFilter, goToProductDetails }) => (
     <div

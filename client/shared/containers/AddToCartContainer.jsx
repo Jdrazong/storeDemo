@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import actions from 'Cart/actions';
-import { components, messages } from 'shared';
+import { messages } from 'shared';
 import shoppingCartImage from 'icons/shopping-cart.png';
+import Button from '../components/Button';
 
-const { Button } = components;
 const { addCartItem } = actions;
 
 const mapStateToProps = (state, ownProps) => ({

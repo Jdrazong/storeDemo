@@ -1,8 +1,8 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import Filters from './Filters';
-import SelectedCategoryContainer from './SelectedCategoryContainer';
+import Filters from '../Filters';
+import SelectedCategoryContainer from '../SelectedCategoryContainer';
 
 describe('Products: Filters', () => {
     const baseProps = {

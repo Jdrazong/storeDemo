@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { withRouter } from 'react-router-dom';
 import ProductDetails from './ProductDetails';
-import actions from './actions';
+import actions from '../actions';
 
 const { getProductDetails } = actions;
 

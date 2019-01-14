@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { withRouter } from 'react-router-dom';
 import { hocs } from 'shared';
+import selectors from '../selectors';
 import Products from './Products';
-import selectors from './selectors';
 
 const { getFilteredProducts } = selectors;
 const { withLoader } = hocs;

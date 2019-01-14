@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { messages } from 'shared';
-import { reviewShape } from './shapes';
+import { reviewShape } from '../shapes';
 
 const Review = ({ review }) => (
     <div className="product-details-review-container">

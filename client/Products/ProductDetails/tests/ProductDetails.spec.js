@@ -2,8 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { components } from 'shared';
-import ProductDetails from './ProductDetails';
-import ProductContainer from './ProductContainer';
+import ProductDetails from '../ProductDetails';
+import ProductContainer from '../ProductContainer';
 
 describe('Products: ProductDetails', () => {
     const baseProps = {

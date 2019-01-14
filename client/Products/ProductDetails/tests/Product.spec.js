@@ -1,9 +1,11 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import Product from './Product';
-import Review from './Review';
-import AddToCartContainer from './AddToCartContainer';
+import { containers } from 'shared';
+import Product from '../Product';
+import Review from '../Review';
+
+const { AddToCartContainer } = containers;
 
 describe('Products: Product', () => {
     const baseProps = {
