@@ -4,7 +4,7 @@ import { messages } from 'shared';
 import SelectedCategoryContainer from './SelectedCategoryContainer';
 
 const Filters = ({ nameFilter, setNameFilterValue }) => (
-    <div>
+    <div className="product-filters-container">
         <input
             className="product-search-input"
             placeholder={messages.filters.placeholders.searchPlaceholder}

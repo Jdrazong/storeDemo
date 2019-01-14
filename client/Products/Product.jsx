@@ -7,11 +7,13 @@ import AddToCartContainer from './AddToCartContainer';
 const Product = ({ productDetails }) => Boolean(productDetails.productDescription) && (
     <div className="product-details-container">
         <div className="product-details-title">{productDetails.product.name}</div>
-        <img
-            src={`${window.location.origin}/${productDetails.product.img}`}
-            className="product-details-main-image"
-            alt={productDetails.product.name}
-        />
+        <div className="product-details-main-image-container">
+            <img
+                src={`${window.location.origin}/${productDetails.product.img}`}
+                className="product-details-main-image"
+                alt={productDetails.product.name}
+            />
+        </div>
         <div className="product-details-other-images-container">
             {productDetails.images.map(image => (
                 <img

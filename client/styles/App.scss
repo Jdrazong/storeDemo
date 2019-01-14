@@ -3,6 +3,8 @@
 @import "./mixins/breakpoints";
 @import "./mixins/border";
 @import "./mixins/shadow";
+@import "./mixins/tile-padding";
+@import "./mixins/input";
 
 @import "./Header/header";
 @import "./PageContent/page-content";

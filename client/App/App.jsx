@@ -4,7 +4,7 @@ import Routes from 'Routes/Routes';
 import 'styles/App.scss';
 
 const App = () => (
-    <div>
+    <div className="page-container">
         <Header />
         <div className="content-container">
             <Routes />

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ProductTile from './ProductTile';
 import { productShape } from './shapes';
 
-const Products = ({ products, nameFilter, history }) => products.length && (
+const Products = ({ products, nameFilter, history }) => Boolean(products.length) && (
     <div className="products-container">
         {products.map(product => (
             <ProductTile
