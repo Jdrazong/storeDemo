@@ -1,14 +1,18 @@
 import express from 'express';
 import path from 'path';
+import bodyParser from 'body-parser';
 import { products } from './products.json';
 import { shippingOptions } from './shippingOptions.json';
 import { paymentOptions } from './paymentOptions.json';
 import { productDescription } from './productDescription.json';
 import { reviews } from './reviews.json';
 
+
 const app = express();
 
 app.use(express.static('public'));
+
+app.use(bodyParser.json());
 
 app.get('/products', (req, res) => {
     // comment res.json and uncomment setTimeout to test loader on fetching products
@@ -39,21 +43,18 @@ app.get('/productDetails?:productId', (req, res) => {
 });
 
 app.post('/submitOrder', (req, res) => {
-    let body = '';
-    req.on('data', (chunk) => {
-        body += chunk.toString();
-    });
+    const {
+        cart
+    } = req.body;
 
-    req.on('end', () => {
-        const parsedBody = JSON.parse(body);
-        const totalPrice = parsedBody.cart.reduce((prevValue, nextValue) => prevValue + nextValue.quantity * nextValue.product.price, 0);
-        const currency = parsedBody.cart.length && parsedBody.cart[0].product.currency;
-        const orderedItems = parsedBody.cart.map(item => ({ name: item.product.name, quantity: item.quantity }));
-        res.json({
-            totalPrice,
-            currency,
-            orderedItems
-        });
+    const totalPrice = cart.reduce((prevValue, nextValue) => prevValue + nextValue.quantity * nextValue.product.price, 0);
+    const currency = cart.length && cart[0].product.currency;
+    const orderedItems = cart.map(item => ({ name: item.product.name, quantity: item.quantity }));
+
+    res.json({
+        totalPrice,
+        currency,
+        orderedItems
     });
 });
 

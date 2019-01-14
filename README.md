@@ -1,6 +1,6 @@
 # Store demo
 
-Store demo according to requirements
+Store demo built with react/redux and a simple nodejs server to create mock responses.
 
 ## Getting Started
 
